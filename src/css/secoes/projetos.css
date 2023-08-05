@@ -1,0 +1,84 @@
+.projetos {
+    min-height: 100vh;
+}
+
+.projetos .container-projetos {
+    justify-content: center;
+    gap: 9rem;
+    padding: 8rem 2rem;
+    
+}
+
+.projetos .projeto {
+    justify-content: center;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    font-size: var(--fonte-pequena);
+    background-color: var(--cinza-escuro);
+    color: var(--cor-branca);
+    font-weight: 400;
+}
+
+.projetos .projeto h3{
+    padding: 0 5px;
+}
+
+.projetos .projeto img {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.projetos .projeto .informacoes-projeto {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projetos .projeto,
+.projetos .projeto .informacoes-projeto,
+.projetos .projeto .informacoes-projeto p{
+    transition: all 0.3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.projetos .projeto:hover {
+    transform: scale(1.05);
+}
+
+.projetos .projeto:hover,
+.projetos .projeto:hover .informacoes-projeto {
+    opacity: 0.6;
+    background-color: var(--cor-escura);
+}
+
+.projetos .projeto:hover .informacoes-projeto p {
+    opacity: 1;
+}
+
+@media(max-width: 1280px) {
+    .projetos {
+        padding: var(--mobile-padding);
+    }
+}
+
+@media(max-width: 414px){
+    .projetos .container .section-title {
+        padding: 7rem 0;
+        font-size: 3.6rem;
+    }
+}
+
+@media(min-width:1440px){
+    .section.projetos{
+        display: flex;
+    }
+}

@@ -1,0 +1,93 @@
+.habilidades .container {
+    padding-bottom: 6rem;
+}
+
+.habilidades .container-habilidades {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.habilidades .container-habilidades .informacoes {
+    max-width: 300px;
+    padding: 3rem;
+    /* border: 2px solid #c5cacc; */
+    box-shadow: -1px -1px 2px #c5cacc, 1px 1px 2px #c5cacc;
+}
+
+.habilidades .container-habilidades .informacoes p,
+.habilidades .container-habilidades .informacoes h3,
+.habilidades .container-habilidades .informacoes .logo i{
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.habilidades .container-habilidades .informacoes:hover p,
+.habilidades .container-habilidades .informacoes:hover h3,
+.habilidades .container-habilidades .informacoes:hover .logo i{
+    color: var(--cor-primaria);
+}
+
+.habilidades .container-habilidades .informacoes h3 {
+    font-size: var(--fonte-extra-grande);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--cor-secundaria);
+}
+
+.habilidades .container-habilidades .informacoes p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.habilidades .container-habilidades i {
+    font-size: 6rem;
+}
+
+.habilidades .container-habilidades .informacoes.informacoes.javascript:hover h3,
+.habilidades .container-habilidades .informacoes.javascript:hover .logo i {
+    color: #EFD81D;
+}
+
+.habilidades .container-habilidades .informacoes.informacoes.html:hover h3,
+.habilidades .container-habilidades .informacoes.html:hover .logo i {
+    color: #E5532D;
+}
+
+.habilidades .container-habilidades .informacoes.informacoes.css:hover h3,
+.habilidades .container-habilidades .informacoes.css:hover .logo i {
+    color: #2D53E5;
+}
+
+.habilidades .container-habilidades .informacoes.informacoes.github:hover h3,
+.habilidades .container-habilidades .informacoes.github:hover .logo i {
+    color: #4B5F69;
+}
+
+.habilidades .container-habilidades .informacoes.informacoes.git:hover h3,
+.habilidades .container-habilidades .informacoes.git:hover .logo i {
+    color: #F05639;
+}
+
+@media(max-width: 768px){
+    .habilidades {
+        padding: var(--padding-mobile);
+    }
+}
+
+@media(max-width: 414px){
+    .habilidades .section-title {
+        padding: 7rem 0;
+        font-size: 3.6rem;
+    }
+}
+
+@media(min-width:1440px){
+    .section.habilidades{
+        display: flex;
+    }
+}

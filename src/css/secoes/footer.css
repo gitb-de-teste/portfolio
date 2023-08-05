@@ -1,0 +1,48 @@
+.footer {
+    padding: 10rem;
+    background-color: var(--cinza-claro);
+}
+
+.footer .column {
+    align-items: center;
+}
+
+.footer h2,
+.footer .redes-sociais {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footer .redes-sociais a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--cor-branca);
+    margin: 0 1rem;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer .redes-sociais a i {
+    line-height: 40px;
+}
+
+.footer .redes-sociais a:hover {
+    box-shadow: inset 10px 10px 20px #333438, inset -10px -10px 20px #7e7d7d;
+}
+
+@media(max-width: 375px){
+    .footer {
+        padding: var(--mobile-padding);
+    }
+    
+    .footer .redes-sociais {
+        width: 100%;
+    }
+
+    .footer .redes-sociais a {
+        margin: 5px;
+    }
+}
